@@ -7,6 +7,7 @@
     "dev:kv": "cross-env NEXT_PUBLIC_STORAGE_PROVIDER=kv NEXT_PUBLIC_WORKERS_BASE_URL=http://127.0.0.1:8787 next dev -p 9002",
     "workers:dev": "wrangler dev",
     "workers:deploy": "wrangler deploy",
+    "deploy": "npm exec wrangler deploy -- --env production",
     "genkit:dev": "genkit start src/ai/dev.ts",
     "genkit:watch": "genkit start --watch src/ai/dev.ts",
     "build": "NODE_ENV=production next build",
