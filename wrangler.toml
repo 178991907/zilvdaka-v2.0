@@ -39,7 +39,7 @@ preview_id = "zilvdaka_kv_preview"  # 本地预览使用
 
 # Production environment configuration
 [env.production]
-name = "zilvdaka-workers-prod"
+name = "111"
 vars = { APP_ENV = "production" }
 
 # KV binding omitted in production; APP_KV is optional with in-memory fallback
