@@ -1,0 +1,380 @@
+{
+  "appName": "Discipline Baby",
+  "dashboardLink": "Settings Page",
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "tasks": "Tasks",
+    "achievements": "Achievements",
+    "reports": "Reports",
+    "rewards": "Rewards",
+    "pomodoro": "Pomodoro",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "user": {
+    "level": "Level {{level}}",
+    "menu": {
+      "profile": "Profile",
+      "billing": "Billing",
+      "settings": "Settings",
+      "logout": "Logout"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "myPet": "My Pet",
+    "dailyGoal": "Daily Goal",
+    "dailyGoalDescription": "{{completedTasks}} of {{totalTasks}} tasks completed today",
+    "xpGained": "XP Gained",
+    "xpToNextLevel": "{{xp}} XP to next level",
+    "todaysAdventures": "Today's Adventures",
+    "noAdventures": "No adventures for today. Go add some!",
+    "petIntroTitle": "Meet Your Growth Pet!",
+    "petIntroDescription": "This little creature is your new best friend on this journey of growth. It thrives on your accomplishments!",
+    "petIntroItems": [
+      "Every task you complete gives it XP.",
+      "As it gains XP, it will grow bigger.",
+      "At certain levels, it will evolve into a new form!"
+    ],
+    "editPage": "Edit Page",
+    "done": "Done"
+  },
+  "tasks": {
+    "title": "Task Management",
+    "addTask": "Add New Task",
+    "addTaskDialog": {
+      "title": "Create a New Task",
+      "description": "Set up a new recurring or one-time task for your child.",
+      "taskName": "Task Name",
+      "taskNamePlaceholder": "e.g., Read for 20 minutes",
+      "category": "Category",
+      "categoryPlaceholder": "Select a category",
+      "difficulty": "Difficulty",
+      "difficultyPlaceholder": "Select a difficulty",
+      "recurrence": "Recurrence",
+      "repeatEvery": "Repeat Every",
+      "selectUnit": "Select Unit",
+      "repeatOn": "Repeat On",
+      "time": "Time",
+      "createTask": "Create Task"
+    },
+    "editTaskDialog": {
+      "title": "Edit Task",
+      "description": "Update the details of this task.",
+      "save": "Save Changes"
+    },
+    "recurrence": {
+      "once": "Once",
+      "recurring": "Recurring",
+      "units": {
+        "week": "Week(s)",
+        "month": "Month(s)",
+        "year": "Year(s)"
+      },
+      "display": {
+        "once": "One-time task",
+        "onceAtTime": "One-time at {{time}}",
+        "every_week": "Every week",
+        "every_week_on": "Every week on",
+        "every_week_at": "Every week at {{time}}",
+        "every_week_on_at": "Every week at {{time}} on",
+        "every_x_weeks": "Every {{count}} weeks",
+        "every_x_weeks_on": "Every {{count}} weeks on",
+        "every_x_weeks_at": "Every {{count}} weeks at {{time}}",
+        "every_x_weeks_on_at": "Every {{count}} weeks at {{time}} on",
+        "every_month": "Every month",
+        "every_month_at": "Every month at {{time}}",
+        "every_x_months": "Every {{count}} months",
+        "every_x_months_at": "Every {{count}} months at {{time}}",
+        "every_year": "Every year",
+        "every_year_at": "Every year at {{time}}",
+        "every_x_years": "Every {{count}} years",
+        "every_x_years_at": "Every {{count}} years at {{time}}"
+      }
+    },
+    "categories": {
+      "learning": "Learning",
+      "creative": "Creative",
+      "health": "Health",
+      "school": "School",
+      "activity": "Activity"
+    },
+    "difficulties": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    },
+    "table": {
+      "task": "Task",
+      "category": "Category",
+      "difficulty": "Difficulty",
+      "recurrence": "Recurrence",
+      "status": "Status",
+      "actions": "Actions",
+      "openMenu": "Open menu",
+      "edit": "Edit",
+      "pause": "Pause",
+      "resume": "Resume",
+      "delete": "Delete"
+    },
+    "status": {
+      "pending": "Pending",
+      "completed": "Completed",
+      "active": "Active",
+      "paused": "Paused"
+    },
+    "weekdays": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    },
+    "weekdaysShort": {
+        "mon": "Mon",
+        "tue": "Tue",
+        "wed": "Wed",
+        "thu": "Thu",
+        "fri": "Fri",
+        "sat": "Sat",
+        "sun": "Sun"
+    },
+    "weekdaysFull": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+    },
+    "delete": {
+      "title": "Are you sure?",
+      "description": "This action cannot be undone. This will permanently delete the task.",
+      "cancel": "Cancel",
+      "confirm": "Delete"
+    },
+    "dailyTable": {
+      "order": "Order",
+      "dailyTask": "Daily Task",
+      "execution": "Execution",
+      "status": "Status",
+      "start": "Start"
+    }
+  },
+  "achievements": {
+    "title": "Achievements",
+    "unlocked": "{{unlockedCount}} of {{totalCount}} Unlocked",
+    "unlockedOn": "Unlocked",
+    "add": {
+      "button": "Add Achievement",
+      "title": "Add Custom Achievement",
+      "description": "Create a new achievement to track."
+    },
+    "edit": {
+      "title": "Edit Achievement",
+      "description": "Make changes to this achievement.",
+      "name": "Name",
+      "descriptionLabel": "Description",
+      "icon": "Icon",
+      "selectIcon": "Select an icon",
+      "imageUrl": "Image URL",
+      "unlocked": "Unlocked",
+      "date": "Date Unlocked",
+      "pickDate": "Pick a date",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "delete": {
+      "title": "Delete Achievement?",
+      "description": "This will permanently remove this custom achievement. This action cannot be undone.",
+      "confirm": "Yes, delete it"
+    },
+    "items": {
+      "1": {
+        "title": "First Mission",
+        "description": "Complete your very first task."
+      },
+      "2": {
+        "title": "Task Master",
+        "description": "Complete 10 tasks in total."
+      },
+      "3": {
+        "title": "Perfect Week",
+        "description": "Complete all your tasks for 7 days in a row."
+      },
+      "4": {
+        "title": "Streak Starter",
+        "description": "Maintain a 3-day completion streak."
+      },
+      "5": {
+        "title": "Learning Hero",
+        "description": "Complete 5 learning tasks."
+      },
+      "6": {
+        "title": "Creative Genius",
+        "description": "Complete 5 creative tasks."
+      },
+      "ant_bronze": {
+        "title": "Little Ant - Bronze",
+        "description": "1-day streak."
+      },
+      "ant_silver": {
+        "title": "Little Ant - Silver",
+        "description": "3-day streak."
+      },
+      "ant_gold": {
+        "title": "Little Ant - Gold",
+        "description": "7-day streak."
+      },
+      "knight_bronze": {
+        "title": "Brave Knight - Bronze",
+        "description": "7-day streak."
+      },
+      "knight_silver": {
+        "title": "Brave Knight - Silver",
+        "description": "14-day streak."
+      },
+      "knight_gold": {
+        "title": "Brave Knight - Gold",
+        "description": "21-day streak."
+      },
+      "explorer_bronze": {
+        "title": "Magic Explorer - Bronze",
+        "description": "30-day streak."
+      },
+      "explorer_silver": {
+        "title": "Magic Explorer - Silver",
+        "description": "60-day streak."
+      },
+      "explorer_gold": {
+        "title": "Magic Explorer - Gold",
+        "description": "90-day streak."
+      },
+      "guardian_bronze": {
+        "title": "Seasons Guardian - Bronze",
+        "description": "90-day streak."
+      },
+      "guardian_silver": {
+        "title": "Seasons Guardian - Silver",
+        "description": "180-day streak."
+      },
+      "guardian_gold": {
+        "title": "Seasons Guardian - Gold",
+        "description": "365-day streak."
+      },
+      "master_bronze": {
+        "title": "Super Master - Bronze",
+        "description": "1-year streak."
+      },
+      "master_silver": {
+        "title": "Super Master - Silver",
+        "description": "2-year streak."
+      },
+      "master_gold": {
+        "title": "Super Master - Gold",
+        "description": "3-year streak."
+      }
+    }
+  },
+  "reports": {
+    "title": "Reports",
+    "performanceTitle": "Weekly Performance",
+    "selectRange": "Select a date range",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "thisYear": "This Year"
+  },
+  "rewards": {
+    "title": "Rewards"
+  },
+  "pomodoro": {
+    "addTimer": "Add a new timer",
+    "completed": "Completed Pomodoros: {{count}}",
+    "settings": {
+      "title": "Pomodoro Settings",
+      "description": "Customize your timer durations.",
+      "work": "Work",
+      "shortBreak": "Short Break",
+      "longBreak": "Long Break",
+      "minutes": "Minutes",
+      "modes": "Modes",
+      "addMode": "Add Mode",
+      "longBreakInterval": "Long Break Interval",
+      "modeNamePlaceholder": "Mode Name",
+      "defaultModeWork": "Work",
+      "defaultModeShortBreak": "Short Break",
+      "defaultModeLongBreak": "Long Break"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": {
+      "title": "Profile",
+      "description": "This is how others will see you on the site.",
+      "name": "Name",
+      "avatar": "Avatar",
+      "petName": "Pet Name",
+      "choosePet": "Choose Your Pet",
+      "appLogo": "App Logo",
+      "logoUrlPlaceholder": "Enter image URL or upload",
+      "upload": "Upload",
+      "save": "Save Changes",
+      "saveSuccessTitle": "Profile Updated",
+      "saveSuccessDescription": "Your changes have been saved successfully."
+    },
+    "appearance": {
+      "title": "Appearance",
+      "description": "Customize the look and feel of the application."
+    },
+
+    "personalization": {
+      "title": "Personalization",
+      "description": "Adjust theme and sound settings.",
+      "darkMode": "Dark Mode",
+      "darkModeDescription": "Toggle between light and dark themes.",
+      "soundEffects": "Sound Effects",
+      "soundEffectsDescription": "Enable or disable sound effects."
+    },
+    "language": {
+      "title": "Language",
+      "description": "Choose the language for the application.",
+      "displayLanguage": "Display Language",
+      "selectLanguage": "Select a language"
+    },
+    "parentalControls": {
+        "title": "Parental Controls",
+        "description": "Manage rewards and other settings.",
+        "rewardSystem": "Reward System",
+        "rewardSystemDescription": "Set up rewards that can be earned by completing tasks.",
+        "addReward": "Add Reward",
+        "addRewardDialog": {
+            "title": "Add a New Reward",
+            "description": "Define the reward and what it takes to earn it.",
+            "rewardName": "Reward Name",
+            "rewardNamePlaceholder": "e.g., 30 mins of screen time",
+            "tasksRequired": "Tasks Required",
+            "daysRequired": "Days Required",
+            "createButton": "Create Reward"
+        },
+        "noRewards": "No rewards have been set up yet.",
+        "tasksToComplete": "{{count}} tasks to complete",
+        "daysToComplete": "{{count}} consecutive days to complete",
+        "tasksAndDaysToComplete": "{{tasksCount}} tasks & {{daysCount}} days to complete",
+        "noRequirement": "No specific requirement"
+    }
+  },
+  "notifications": {
+    "levelUp": {
+      "title": "Level Up!",
+      "description": "Congratulations! You've reached Level {{level}}."
+    },
+    "petEvolved": {
+      "title": "Your Pet Evolved!",
+      "description": "{{oldPetName}} has evolved into {{newPetName}}! Congratulations on reaching Level {{level}}."
+    }
+  }
+}

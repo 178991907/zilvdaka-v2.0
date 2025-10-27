@@ -1,0 +1,47 @@
+name = "zilvdaka-workers"
+main = "workers/index.ts"
+compatibility_date = "2024-10-01"
+
+[vars]
+APP_ENV = "development"
+
+# Cloudflare KV namespace binding
+[[kv_namespaces]]
+binding = "APP_KV"
+id = "zilvdaka_kv_dev"        # TODO: 替换为实际 namespace ID（wrangler kv:namespace create）
+preview_id = "zilvdaka_kv_preview"  # 本地预览使用
+
+# Scheduled events (CRON jobs) - uncomment to enable
+# [[triggers.crons]]
+# cron = "0 */6 * * *"  # Every 6 hours - cleanup old data
+
+# 可按需添加 D1/R2/Queues 等绑定
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "zilvdaka-db"
+# database_id = "zilvdaka_db_dev"
+
+# [[r2_buckets]]
+# binding = "ASSETS"
+# bucket_name = "zilvdaka-assets"
+
+# [[queues.producers]]
+# binding = "TASKS_QUEUE"
+# queue = "zilvdaka-tasks"
+
+# [[queues.consumers]]
+# queue = "zilvdaka-tasks"
+# max_concurrency = 5
+# max_batch_size = 10
+# max_batch_timeout = 5
+# max_retries = 3
+# dead_letter_queue = "zilvdaka-tasks-dlq"
+
+# Production environment configuration
+[env.production]
+name = "zilvdaka-workers-prod"
+vars = { APP_ENV = "production" }
+
+[[env.production.kv_namespaces]]
+binding = "APP_KV"
+id = "zilvdaka_kv_prod"  # TODO: 替换为生产环境 namespace ID
