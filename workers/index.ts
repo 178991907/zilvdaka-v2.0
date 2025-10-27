@@ -61,7 +61,7 @@ export default {
       const kvResponse = await handleKVRoutes(request, env, ctx)
       if (kvResponse) {
         const duration = Date.now() - startTime
-        console.log(`[${requestId}] Response: ${kvResponse.status} (${duration}ms)`)
+        console.log(`[${requestId}] Response: ${kvResponse.status} (${duration}ms)`) 
         return kvResponse
       }
 
@@ -85,7 +85,11 @@ export default {
     const requestId = generateRequestId()
     console.log(`[${requestId}] Scheduled event: ${controller.cron}`)
     
-    // Example: Clean up old data, send notifications, etc.
-    ctx.waitUntil(env.APP_KV.put(`last_cron_${requestId}`, new Date().toISOString()))
+    // Guard: only write to KV if binding exists
+    if (env.APP_KV) {
+      ctx.waitUntil(env.APP_KV.put(`last_cron_${requestId}`, new Date().toISOString()))
+    } else {
+      console.log(`[${requestId}] No APP_KV binding; scheduled handler no-op`)
+    }
   },
 }

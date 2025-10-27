@@ -17,14 +17,32 @@ const json = (data: any, status = 200, headers: Record<string, string> = {}) =>
     },
   })
 
+// In-memory fallback when APP_KV is not bound
+const memoryStore = new Map<string, string>()
+
+async function kvGet(env: Env, key: string): Promise<string | null> {
+  if (env.APP_KV) {
+    return await env.APP_KV.get(key)
+  }
+  return memoryStore.has(key) ? memoryStore.get(key)! : null
+}
+
+async function kvPut(env: Env, key: string, value: string): Promise<void> {
+  if (env.APP_KV) {
+    await env.APP_KV.put(key, value)
+    return
+  }
+  memoryStore.set(key, value)
+}
+
 async function getJSON<T>(env: Env, key: string, fallback: T): Promise<T> {
-  const val = await env.APP_KV.get(key)
+  const val = await kvGet(env, key)
   if (!val) return fallback
   try { return JSON.parse(val) as T } catch { return fallback }
 }
 
 async function putJSON(env: Env, key: string, value: any): Promise<void> {
-  await env.APP_KV.put(key, JSON.stringify(value))
+  await kvPut(env, key, JSON.stringify(value))
 }
 
 // Default data

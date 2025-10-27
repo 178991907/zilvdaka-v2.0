@@ -1,7 +1,7 @@
 /// <reference types="@cloudflare/workers-types" />
 
 export interface Env {
-  APP_KV: KVNamespace
+  APP_KV?: KVNamespace
   APP_ENV: string
 }
 

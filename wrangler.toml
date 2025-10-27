@@ -42,6 +42,4 @@ preview_id = "zilvdaka_kv_preview"  # 本地预览使用
 name = "zilvdaka-workers-prod"
 vars = { APP_ENV = "production" }
 
-[[env.production.kv_namespaces]]
-binding = "APP_KV"
-id = "zilvdaka_kv_prod"  # TODO: 替换为生产环境 namespace ID
+# KV binding omitted in production; APP_KV is optional with in-memory fallback
